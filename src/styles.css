@@ -1,1 +1,97 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  /* Color */
+  --primary-color: #ff6b6b;
+  --black: #000000;
+  --white: #fff;
+
+  /* Soft Complementary (Less Harsh Contrast) */
+  --complementary-color: #4bcac6; /* Muted Cyan */
+
+  /* Background & Neutral Colors */
+  --background-color: #fdf7f7; /* Soft Warm White */
+  --card-background: #ffe3e3; /* Light Coral */
+  --text-color: #2b2b2b; /* Deep Charcoal for readability */
+  --muted-text: #595959; /* Softer Dark Gray */
+
+  /* Accent Colors (for buttons, links, highlights) */
+  --accent-1: #ff9a6b; /* Warm Peach */
+  --accent-2: #6ba4ff; /* Soft Sky Blue */
+  --accent-3: #6bffb5; /* Pastel Mint Green */
+
+  /* Shadows and Borders */
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --border-color: #ffd1d1; /* Soft Pinkish Border */
+
+  /* Text Colors */
+
+  /* Muted Grey for Secondary Text */
+  --text-muted: #595959; /* Softer Dark Gray (Used for less important text) */
+
+  /* Light Grey for Hints/Placeholders */
+  --text-light: #8c8c8c; /* Mid-Light Grey (For subtle emphasis) */
+
+  /* Extra Light Grey for Disabled Text */
+  --text-disabled: #b3b3b3; /* Soft Grey (For form placeholders, disabled buttons) */
+
+  /* Border and Divider Grey */
+  --border-grey: #e0e0e0; /* Soft Light Grey */
+
+  /* Headings */
+  --font-xxl: 3rem; /* Huge titles (e.g., Hero section) */
+  --font-xl: 2.5rem; /* Main page titles */
+  --font-lg: 2rem; /* Section headings */
+  --font-md: 1.5rem; /* Subheadings */
+
+  /* Body Text */
+  --font-base: 1rem; /* Default body text (16px) */
+  --font-sm: 0.875rem; /* Secondary text (14px) */
+  --font-xs: 0.75rem; /* Captions, footnotes, metadata (12px) */
+
+  /* Buttons & Forms */
+  --font-button: 1rem; /* Default button text */
+  --font-input: 1rem; /* Input field text */
+  --font-placeholder: 0.875rem; /* Placeholder text */
+
+  /* Navigation */
+  --font-nav: 1rem; /* Standard navbar links */
+  --font-nav-small: 0.875rem; /* Small navbar links */
+
+  /* Headings */
+  --font-weight-heading: 700; /* Bold for h1, h2, etc. */
+
+  /* Buttons */
+  --font-weight-button: 600; /* Semi-bold for button text */
+
+  /* Navigation Links */
+  --font-weight-navlink: 500; /* Medium for nav links */
+
+  /* General Text */
+  --font-weight-regular: 400; /* Regular for general text */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Liter", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Containers */
+
+.all-app-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.route-container{
+    width: 100%;
+    max-inline-size: 53rem;
+    padding: 0 20px;
+}

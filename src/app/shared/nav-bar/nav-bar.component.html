@@ -1,0 +1,25 @@
+<nav>
+  <div class="container">
+    <div class="logo">
+      <span class="material-symbols-outlined">local_activity</span>
+    </div>
+    <div class="menu">
+      <ul>
+        @for (navLink of navLinks; track $index) {
+        <li>
+          <a
+            [routerLinkActive]="['activeRoute']"
+            [routerLink]="navLink.destination"
+            ><span class="material-symbols-outlined">{{ navLink.icon }}</span>
+            <span id="nav-link">{{ navLink.name }}</span>
+          </a>
+        </li>
+        }
+      </ul>
+    </div>
+    <div class="activities">
+      <span class="time">{{ currentTime | date : "hh:mm a" }}</span>
+      <button class="navlinks-hover search-button material-symbols-outlined">search</button>
+    </div>
+  </div>
+</nav>
