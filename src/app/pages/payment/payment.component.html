@@ -86,7 +86,6 @@
       <button>Cancel Order</button>
       <button
         class="pay-button"
-        [disabled]="!isPaymentValid()"
         (click)="processPayment()"
       >
         Pay Now

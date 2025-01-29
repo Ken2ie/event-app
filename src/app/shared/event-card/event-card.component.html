@@ -1,5 +1,6 @@
 <div class="event-card">
     <div class="container">
+       @if (payemnt == null) {
         <span class="time">{{event.time}}</span>
         <span class="name">{{event.title}}</span>
         <div class="details">
@@ -18,5 +19,31 @@
                 <span class="price">{{price.currency + " " + price.price}}</span>
             }
         </div>
+       } @else {
+        <div class="ticket">
+            <span class="time">{{event.time}}</span>
+        <span class="name">{{event.title}}</span>
+        <div class="details">
+            <span class="organizers"> <span class="circle">
+                {{event.organizer.initials}}
+            </span> By {{event.organizer.displayName}}</span>
+            <span class="location">
+                <span class="material-symbols-outlined">location_on</span>
+                <span class="address">
+                     <p>{{event.venue.address}}</p>
+                </span>
+            </span>
+        </div> 
+        <div class="event-status">
+            @for (price of event.ticketTiers; track $index) {
+                <span class="price">{{price.currency + " " + price.price}}</span>
+            }
+        </div>
+        </div>
+        <div class="paid-detials">
+            <h2>PAID</h2>
+            
+        </div>
+       }
     </div>
 </div>

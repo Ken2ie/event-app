@@ -91,11 +91,13 @@ export class PaymentComponent implements OnInit{
   }
 
   isPaymentValid(): boolean {
-    return !!(
+    if(
       this.selectedCard && 
       this.securityCode?.length >= 3 && 
       this.totalAmount > 0
-    );
+    ){
+      return true;
+    } else return false
   }
 
   selectCard(card: CreditCard) {

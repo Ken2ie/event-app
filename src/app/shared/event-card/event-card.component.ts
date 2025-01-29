@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Event } from '../../utils/app.interface';
+import { Event, Payment } from '../../utils/app.interface';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -12,5 +12,6 @@ import { CommonModule } from '@angular/common';
 export class EventCardComponent {
 
   @Input() event! : Event;
+  @Input() payemnt! : Payment;
 
 }
