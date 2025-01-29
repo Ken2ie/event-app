@@ -1,7 +1,7 @@
 <div class="your-events">
     <div class="container">
         <div class="head-panel">
-            <h1>Events</h1>
+            <h1>Your Upcoming Events</h1>
             <!-- <button class="material-symbols-outlined">search</button> -->
           </div>
           <div class="all-filtered-events">
@@ -13,7 +13,7 @@
       
             @if(allTickets.length > 0){
                 @for (item of allTickets; track $index) {
-                    <app-event-card [event]="item.event" />
+                    <app-event-card [event]="item.event" [payemnt]="item" />
                     }
             } @else if (allTickets.length == 0) {
                 <span>You have no upcoming events!</span>

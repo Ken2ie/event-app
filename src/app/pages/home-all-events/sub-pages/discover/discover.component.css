@@ -1,5 +1,6 @@
 .discover{
     margin-block-start: 40px;
+    margin-block-end: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;

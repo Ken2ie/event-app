@@ -70,7 +70,8 @@ export class PaymentComponent implements OnInit{
 
   processPayment() {
     if (!this.selectedCard || !this.securityCode || !this.event) {
-      return;
+       alert("Please enter the CVV for your card!")
+       return;
     }
 
     // Create payment object

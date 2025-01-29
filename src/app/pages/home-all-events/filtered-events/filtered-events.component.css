@@ -1,6 +1,7 @@
 .events{
     width: 100%;
     margin-block-start: 40px;
+    margin-block-end: 20px;
 }
 
 .container{

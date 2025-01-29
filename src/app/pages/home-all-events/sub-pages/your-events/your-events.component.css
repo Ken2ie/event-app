@@ -1,0 +1,10 @@
+.your-events {
+    margin-block-start: 40px;
+    margin-block-end: 20px;
+}
+
+.all-filtered-events{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
