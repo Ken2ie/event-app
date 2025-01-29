@@ -1,0 +1,836 @@
+{
+    "events": [
+        {
+            "id": "evt-002",
+            "title": "Champions League Final 2025",
+            "type": "Sports & Gaming",
+            "date": "2025-05-24",
+            "time": "08:45 PM",
+            "venue": {
+                "name": "Allianz Arena",
+                "address": "Werner-Heisenberg-Allee 25, 80939 München",
+                "capacity": 75000,
+                "country": "Germany",
+                "countryCode": "DE",
+                "city": "Munich"
+            },
+            "organizer": {
+                "userId": "org-uefa-001",
+                "name": "UEFA Events SA",
+                "firstName": "Alexander",
+                "lastName": "Ceferin",
+                "displayName": "Alexander Ceferin",
+                "initials": "AC",
+                "avatarUrl": "/api/placeholder/150/150",
+                "role": "Tournament Director",
+                "company": "UEFA",
+                "email": "events@uefa.com",
+                "phone": "+41-848-555-0124",
+                "verified": true,
+                "rating": 4.9,
+                "eventsOrganized": 450,
+                "memberSince": "2008-06-15",
+                "socialMedia": {
+                    "twitter": "@uefa",
+                    "instagram": "@uefa_official"
+                }
+            },
+            "description": "The pinnacle of European club football - UEFA Champions League Final 2025",
+            "ticketTiers": [
+                {
+                    "type": "Category 1",
+                    "price": 750.00,
+                    "currency": "EUR",
+                    "benefits": [
+                        "Premium Seating",
+                        "Official Program"
+                    ],
+                    "available": 10000
+                },
+                {
+                    "type": "Category 2",
+                    "price": 450.00,
+                    "currency": "EUR",
+                    "benefits": [
+                        "Good Viewing Positions"
+                    ],
+                    "available": 20000
+                },
+                {
+                    "type": "Category 3",
+                    "price": 180.00,
+                    "currency": "EUR",
+                    "benefits": [
+                        "Standard Seating"
+                    ],
+                    "available": 40000
+                }
+            ],
+            "status": "Coming Soon",
+            "tags": [
+                "sports",
+                "football",
+                "champions league"
+            ]
+        },
+        {
+            "id": "evt-003",
+            "title": "K-Pop World Festival 2025",
+            "type": "Festivals & Celebrations",
+            "date": "2025-03-15",
+            "time": "02:00 PM",
+            "venue": {
+                "name": "Olympic Stadium Seoul",
+                "address": "424 Olympic-ro, Songpa-gu",
+                "capacity": 69950,
+                "country": "South Korea",
+                "countryCode": "KR",
+                "city": "Seoul"
+            },
+            "organizer": {
+                "userId": "org-kpf-001",
+                "name": "Korean Cultural Foundation",
+                "firstName": "Ji-Young",
+                "lastName": "Kim",
+                "displayName": "Ji-Young Kim",
+                "initials": "JK",
+                "avatarUrl": "/api/placeholder/150/150",
+                "role": "Festival Director",
+                "company": "KCF Events",
+                "email": "info@kcf.kr",
+                "phone": "+82-2-555-0125",
+                "verified": true,
+                "rating": 4.7,
+                "eventsOrganized": 75,
+                "memberSince": "2015-01-01",
+                "socialMedia": {
+                    "twitter": "@kpopfest",
+                    "instagram": "@kpopworldfest"
+                }
+            },
+            "description": "The biggest K-Pop festival featuring top artists and rising stars",
+            "ticketTiers": [
+                {
+                    "type": "VVIP",
+                    "price": 450000.00,
+                    "currency": "KRW",
+                    "benefits": [
+                        "Artist Meet & Greet",
+                        "Premium Seating",
+                        "Festival Merch Pack"
+                    ],
+                    "available": 500
+                },
+                {
+                    "type": "VIP",
+                    "price": 250000.00,
+                    "currency": "KRW",
+                    "benefits": [
+                        "Premium Seating",
+                        "Festival Merch Pack"
+                    ],
+                    "available": 5000
+                },
+                {
+                    "type": "Standard",
+                    "price": 120000.00,
+                    "currency": "KRW",
+                    "benefits": [
+                        "General Admission"
+                    ],
+                    "available": 50000
+                }
+            ],
+            "status": "On Sale",
+            "tags": [
+                "k-pop",
+                "music festival",
+                "concert"
+            ]
+        },
+        {
+            "id": "evt-004",
+            "title": "Venice Art Biennale 2025",
+            "type": "Arts & Culture",
+            "date": "2025-04-23",
+            "time": "10:00 AM",
+            "venue": {
+                "name": "Giardini della Biennale",
+                "address": "Sestiere Castello, 30122",
+                "capacity": 5000,
+                "country": "Italy",
+                "countryCode": "IT",
+                "city": "Venice"
+            },
+            "organizer": {
+                "userId": "org-vb-001",
+                "name": "La Biennale di Venezia",
+                "firstName": "Roberto",
+                "lastName": "Cicutto",
+                "displayName": "Roberto Cicutto",
+                "initials": "RC",
+                "avatarUrl": "/api/placeholder/150/150",
+                "role": "Exhibition Director",
+                "company": "Biennale Foundation",
+                "email": "info@labiennale.org",
+                "phone": "+39-041-555-0126",
+                "verified": true,
+                "rating": 4.9,
+                "eventsOrganized": 25,
+                "memberSince": "2000-01-01",
+                "socialMedia": {
+                    "twitter": "@la_Biennale",
+                    "instagram": "@labiennale"
+                }
+            },
+            "description": "The 60th International Art Exhibition of La Biennale di Venezia",
+            "ticketTiers": [
+                {
+                    "type": "Full Pass",
+                    "price": 85.00,
+                    "currency": "EUR",
+                    "benefits": [
+                        "Access to All Venues",
+                        "Exhibition Catalog",
+                        "Guided Tour"
+                    ],
+                    "available": 1000
+                },
+                {
+                    "type": "Regular",
+                    "price": 45.00,
+                    "currency": "EUR",
+                    "benefits": [
+                        "Access to All Venues"
+                    ],
+                    "available": 3000
+                },
+                {
+                    "type": "Student",
+                    "price": 25.00,
+                    "currency": "EUR",
+                    "benefits": [
+                        "Access to All Venues",
+                        "Student ID Required"
+                    ],
+                    "available": 1000
+                }
+            ],
+            "status": "Early Bird",
+            "tags": [
+                "art",
+                "exhibition",
+                "cultural"
+            ]
+        },
+        {
+            "id": "evt-005",
+            "title": "Dubai Food Festival 2025",
+            "type": "Festivals & Celebrations",
+            "date": "2025-02-25",
+            "time": "12:00 PM",
+            "venue": {
+                "name": "Dubai Festival City",
+                "address": "Dubai Festival City - Dubai",
+                "capacity": 10000,
+                "country": "United Arab Emirates",
+                "countryCode": "UAE",
+                "city": "Dubai"
+            },
+            "organizer": {
+                "userId": "org-dff-001",
+                "name": "Dubai Festivals and Retail Establishment",
+                "firstName": "Ahmed",
+                "lastName": "Al Khaja",
+                "displayName": "Ahmed Al Khaja",
+                "initials": "AK",
+                "avatarUrl": "/api/placeholder/150/150",
+                "role": "Festival Director",
+                "company": "DFRE",
+                "email": "info@dubaifoodfestival.com",
+                "phone": "+971-4-555-0127",
+                "verified": true,
+                "rating": 4.6,
+                "eventsOrganized": 45,
+                "memberSince": "2012-01-01",
+                "socialMedia": {
+                    "twitter": "@DXBFoodFest",
+                    "instagram": "@dubaifoodfest"
+                }
+            },
+            "description": "A city-wide celebration of food, featuring world-class restaurants, local eateries, and celebrity chefs",
+            "ticketTiers": [
+                {
+                    "type": "Gourmet Pass",
+                    "price": 1500.00,
+                    "currency": "AED",
+                    "benefits": [
+                        "All Events Access",
+                        "Chef Meet & Greets",
+                        "Tasting Sessions"
+                    ],
+                    "available": 200
+                },
+                {
+                    "type": "Foodie Pass",
+                    "price": 750.00,
+                    "currency": "AED",
+                    "benefits": [
+                        "Main Events Access",
+                        "Tasting Sessions"
+                    ],
+                    "available": 1000
+                },
+                {
+                    "type": "Standard Pass",
+                    "price": 250.00,
+                    "currency": "AED",
+                    "benefits": [
+                        "General Admission"
+                    ],
+                    "available": 5000
+                }
+            ],
+            "status": "On Sale",
+            "tags": [
+                "food",
+                "cultural",
+                "festival"
+            ]
+        },
+        {
+            "id": "evt-006",
+            "title": "Melbourne Comedy Festival 2025",
+            "type": "Music & Entertainment",
+            "date": "2025-03-26",
+            "time": "07:00 PM",
+            "venue": {
+                "name": "Melbourne Town Hall",
+                "address": "90-130 Swanston St, Melbourne VIC 3000",
+                "capacity": 2000,
+                "country": "Australia",
+                "countryCode": "AU",
+                "city": "Melbourne",
+                "state": "Victoria"
+            },
+            "organizer": {
+                "userId": "org-mcf-001",
+                "name": "Melbourne International Comedy Festival",
+                "firstName": "Susan",
+                "lastName": "Provan",
+                "displayName": "Susan Provan",
+                "initials": "SP",
+                "avatarUrl": "/api/placeholder/150/150",
+                "role": "Festival Director",
+                "company": "MICF",
+                "email": "info@comedyfestival.com.au",
+                "phone": "+61-3-555-0128",
+                "verified": true,
+                "rating": 4.8,
+                "eventsOrganized": 30,
+                "memberSince": "2005-01-01",
+                "socialMedia": {
+                    "twitter": "@micomfestival",
+                    "instagram": "@melbcomedy"
+                }
+            },
+            "description": "Australia's largest comedy festival featuring local and international comedians",
+            "ticketTiers": [
+                {
+                    "type": "Festival Pass",
+                    "price": 299.00,
+                    "currency": "AUD",
+                    "benefits": [
+                        "Access to All Shows",
+                        "Priority Seating"
+                    ],
+                    "available": 500
+                },
+                {
+                    "type": "Weekend Pass",
+                    "price": 150.00,
+                    "currency": "AUD",
+                    "benefits": [
+                        "Access to Weekend Shows"
+                    ],
+                    "available": 1000
+                },
+                {
+                    "type": "Single Show",
+                    "price": 45.00,
+                    "currency": "AUD",
+                    "benefits": [
+                        "Single Show Entry"
+                    ],
+                    "available": 1500
+                }
+            ],
+            "status": "Coming Soon",
+            "tags": [
+                "comedy",
+                "festival",
+                "entertainment"
+            ]
+        },
+        {
+            "id": "evt-007",
+            "title": "Rio Carnival 2025",
+            "type": "Festivals & Celebrations",
+            "date": "2025-02-28",
+            "time": "8:00 PM",
+            "venue": {
+                "name": "Sambadrome Marquês de Sapucaí",
+                "address": "R. Marquês de Sapucaí - Santo Cristo, Rio de Janeiro",
+                "capacity": 90000,
+                "country": "Brazil",
+                "countryCode": "BR",
+                "city": "Rio de Janeiro"
+            },
+            "organizer": {
+                "userId": "org-rio-001",
+                "name": "LIESA",
+                "firstName": "Jorge",
+                "lastName": "Castanheira",
+                "displayName": "Jorge Castanheira",
+                "initials": "JC",
+                "avatarUrl": "/api/placeholder/150/150",
+                "role": "Carnival Director",
+                "company": "LIESA",
+                "email": "info@liesa.com.br",
+                "phone": "+55-21-555-0129",
+                "verified": true,
+                "rating": 4.9,
+                "eventsOrganized": 35,
+                "memberSince": "1998-01-01",
+                "socialMedia": {
+                    "twitter": "@RioCarnival",
+                    "instagram": "@carnavalrio"
+                }
+            },
+            "description": "The world's biggest carnival celebration featuring samba schools parade",
+            "ticketTiers": [
+                {
+                    "type": "VIP Box",
+                    "price": 2500.00,
+                    "currency": "BRL",
+                    "benefits": [
+                        "Private Box",
+                        "Buffet",
+                        "Open Bar",
+                        "Premium View"
+                    ],
+                    "available": 50
+                },
+                {
+                    "type": "Grandstand Front",
+                    "price": 1200.00,
+                    "currency": "BRL",
+                    "benefits": [
+                        "Front Section Seating",
+                        "Carnival Kit"
+                    ],
+                    "available": 2000
+                },
+                {
+                    "type": "Grandstand",
+                    "price": 500.00,
+                    "currency": "BRL",
+                    "benefits": [
+                        "Regular Seating"
+                    ],
+                    "available": 50000
+                }
+            ],
+            "status": "On Sale",
+            "tags": [
+                "carnival",
+                "cultural",
+                "parade",
+                "samba"
+            ]
+        },
+        {
+            "id": "evt-008",
+            "title": "Paris Fashion Week 2025",
+            "type": "Arts & Culture",
+            "date": "2025-03-03",
+            "time": "11:00 AM",
+            "venue": {
+                "name": "Le Carreau du Temple",
+                "address": "4 Rue Eugène Spuller, 75003 Paris",
+                "capacity": 3000,
+                "country": "France",
+                "countryCode": "FR",
+                "city": "Paris"
+            },
+            "organizer": {
+                "userId": "org-pfw-001",
+                "name": "Fédération de la Haute Couture",
+                "firstName": "Pascal",
+                "lastName": "Morand",
+                "displayName": "Pascal Morand",
+                "initials": "PM",
+                "avatarUrl": "/api/placeholder/150/150",
+                "role": "Executive President",
+                "company": "FHCM",
+                "email": "contact@fhcm.paris",
+                "phone": "+33-1-555-0130",
+                "verified": true,
+                "rating": 4.8,
+                "eventsOrganized": 85,
+                "memberSince": "2000-01-01",
+                "socialMedia": {
+                    "twitter": "@FHCM_Paris",
+                    "instagram": "@pfw"
+                }
+            },
+            "description": "The premier fashion event showcasing Fall/Winter 2025 collections",
+            "ticketTiers": [
+                {
+                    "type": "Front Row",
+                    "price": 2000.00,
+                    "currency": "EUR",
+                    "benefits": [
+                        "Front Row Seating",
+                        "VIP Lounge Access",
+                        "Gift Bag",
+                        "After Party"
+                    ],
+                    "available": 100
+                },
+                {
+                    "type": "Premium",
+                    "price": 800.00,
+                    "currency": "EUR",
+                    "benefits": [
+                        "Premium Seating",
+                        "Gift Bag"
+                    ],
+                    "available": 500
+                },
+                {
+                    "type": "Standard",
+                    "price": 300.00,
+                    "currency": "EUR",
+                    "benefits": [
+                        "Standard Seating"
+                    ],
+                    "available": 2000
+                }
+            ],
+            "status": "Coming Soon",
+            "tags": [
+                "fashion",
+                "luxury",
+                "haute couture"
+            ]
+        },
+        {
+            "id": "evt-009",
+            "title": "Toronto International Film Festival 2025",
+            "type": "Arts & Culture",
+            "date": "2025-09-04",
+            "time": "6:00 PM",
+            "venue": {
+                "name": "TIFF Bell Lightbox",
+                "address": "350 King Street West, Toronto",
+                "capacity": 1500,
+                "country": "Canada",
+                "countryCode": "CA",
+                "city": "Toronto",
+                "state": "Ontario"
+            },
+            "organizer": {
+                "userId": "org-tiff-001",
+                "name": "TIFF",
+                "firstName": "Cameron",
+                "lastName": "Bailey",
+                "displayName": "Cameron Bailey",
+                "initials": "CB",
+                "avatarUrl": "/api/placeholder/150/150",
+                "role": "Artistic Director",
+                "company": "TIFF",
+                "email": "info@tiff.net",
+                "phone": "+1-416-555-0131",
+                "verified": true,
+                "rating": 4.7,
+                "eventsOrganized": 20,
+                "memberSince": "2008-01-01",
+                "socialMedia": {
+                    "twitter": "@TIFF_NET",
+                    "instagram": "@tiff_net"
+                }
+            },
+            "description": "North America's leading film festival featuring premieres and award-winning cinema",
+            "ticketTiers": [
+                {
+                    "type": "Festival Pass",
+                    "price": 750.00,
+                    "currency": "CAD",
+                    "benefits": [
+                        "All Screenings Access",
+                        "Gala Events",
+                        "Industry Networking"
+                    ],
+                    "available": 200
+                },
+                {
+                    "type": "Flex Pack",
+                    "price": 350.00,
+                    "currency": "CAD",
+                    "benefits": [
+                        "10 Screening Vouchers",
+                        "Priority Booking"
+                    ],
+                    "available": 1000
+                },
+                {
+                    "type": "Single Screening",
+                    "price": 25.00,
+                    "currency": "CAD",
+                    "benefits": [
+                        "Single Film Access"
+                    ],
+                    "available": 10000
+                }
+            ],
+            "status": "Early Bird",
+            "tags": [
+                "film",
+                "cinema",
+                "festival",
+                "premiere"
+            ]
+        },
+        {
+            "id": "evt-010",
+            "title": "Singapore Grand Prix 2025",
+            "type": "Sports & Gaming",
+            "date": "2025-09-21",
+            "time": "08:00 PM",
+            "venue": {
+                "name": "Marina Bay Street Circuit",
+                "address": "Marina Bay, Singapore",
+                "capacity": 65000,
+                "country": "Singapore",
+                "countryCode": "SG",
+                "city": "Singapore"
+            },
+            "organizer": {
+                "userId": "org-sgp-001",
+                "name": "Singapore GP Pte Ltd",
+                "firstName": "Colin",
+                "lastName": "Syn",
+                "displayName": "Colin Syn",
+                "initials": "CS",
+                "avatarUrl": "/api/placeholder/150/150",
+                "role": "Deputy Chairman",
+                "company": "Singapore GP",
+                "email": "info@singaporegp.sg",
+                "phone": "+65-6555-0132",
+                "verified": true,
+                "rating": 4.8,
+                "eventsOrganized": 15,
+                "memberSince": "2008-01-01",
+                "socialMedia": {
+                    "twitter": "@F1NightRace",
+                    "instagram": "@f1nightrace"
+                }
+            },
+            "description": "Formula 1 Singapore Airlines Singapore Grand Prix 2025",
+            "ticketTiers": [
+                {
+                    "type": "Paddock Club",
+                    "price": 8888.00,
+                    "currency": "SGD",
+                    "benefits": [
+                        "Paddock Access",
+                        "Gourmet Dining",
+                        "Pit Lane Walks",
+                        "Premium Views"
+                    ],
+                    "available": 100
+                },
+                {
+                    "type": "Sky Suite",
+                    "price": 4888.00,
+                    "currency": "SGD",
+                    "benefits": [
+                        "Air-Conditioned Suite",
+                        "Gourmet Dining",
+                        "Premium Views"
+                    ],
+                    "available": 500
+                },
+                {
+                    "type": "Grandstand",
+                    "price": 888.00,
+                    "currency": "SGD",
+                    "benefits": [
+                        "Reserved Seating",
+                        "Zone Access"
+                    ],
+                    "available": 50000
+                }
+            ],
+            "status": "Coming Soon",
+            "tags": [
+                "F1",
+                "motorsport",
+                "racing",
+                "sports"
+            ]
+        },
+        {
+            "id": "evt-011",
+            "title": "Cape Town Jazz Festival 2025",
+            "type": "Music & Entertainment",
+            "date": "2025-03-28",
+            "time": "05:00 PM",
+            "venue": {
+                "name": "Cape Town International Convention Centre",
+                "address": "Convention Square, 1 Lower Long Street",
+                "capacity": 15000,
+                "country": "South Africa",
+                "countryCode": "ZA",
+                "city": "Cape Town"
+            },
+            "organizer": {
+                "userId": "org-ctjf-001",
+                "name": "espAfrika",
+                "firstName": "Billy",
+                "lastName": "Domingo",
+                "displayName": "Billy Domingo",
+                "initials": "BD",
+                "avatarUrl": "/api/placeholder/150/150",
+                "role": "Festival Director",
+                "company": "espAfrika",
+                "email": "info@capetownjazz.com",
+                "phone": "+27-21-555-0133",
+                "verified": true,
+                "rating": 4.6,
+                "eventsOrganized": 25,
+                "memberSince": "2006-01-01",
+                "socialMedia": {
+                    "twitter": "@CTJazzFest",
+                    "instagram": "@capetownjazzfest"
+                }
+            },
+            "description": "Africa's Grandest Gathering - Two days of world-class jazz performances",
+            "ticketTiers": [
+                {
+                    "type": "VIP Weekend Pass",
+                    "price": 2500.00,
+                    "currency": "ZAR",
+                    "benefits": [
+                        "VIP Area Access",
+                        "Meet & Greet",
+                        "Complimentary Drinks"
+                    ],
+                    "available": 200
+                },
+                {
+                    "type": "Weekend Pass",
+                    "price": 1200.00,
+                    "currency": "ZAR",
+                    "benefits": [
+                        "2-Day Festival Access"
+                    ],
+                    "available": 5000
+                },
+                {
+                    "type": "Day Pass",
+                    "price": 750.00,
+                    "currency": "ZAR",
+                    "benefits": [
+                        "Single Day Access"
+                    ],
+                    "available": 8000
+                }
+            ],
+            "status": "On Sale",
+            "tags": [
+                "jazz",
+                "music",
+                "festival",
+                "cultural"
+            ]
+        },
+        {
+            "id": "evt-012",
+            "title": "Moscow Ballet: Swan Lake",
+            "type": "Arts & Culture",
+            "date": "2025-04-15",
+            "time": "07:30 PM",
+            "venue": {
+                "name": "Bolshoi Theatre",
+                "address": "Theatre Square, 1, Moscow",
+                "capacity": 2500,
+                "country": "Russia",
+                "countryCode": "RU",
+                "city": "Moscow"
+            },
+            "organizer": {
+                "userId": "org-bolshoi-001",
+                "name": "Bolshoi Theatre",
+                "firstName": "Vladimir",
+                "lastName": "Urin",
+                "displayName": "Vladimir Urin",
+                "initials": "VU",
+                "avatarUrl": "/api/placeholder/150/150",
+                "role": "General Director",
+                "company": "Bolshoi Theatre",
+                "email": "info@bolshoi.ru",
+                "phone": "+7-495-555-0134",
+                "verified": true,
+                "rating": 4.9,
+                "eventsOrganized": 150,
+                "memberSince": "1995-01-01",
+                "socialMedia": {
+                    "twitter": "@BolshoiOfficial",
+                    "instagram": "@bolshoi_theatre"
+                }
+            },
+            "description": "Tchaikovsky's masterpiece performed by the legendary Bolshoi Ballet",
+            "ticketTiers": [
+                {
+                    "type": "Premium Orchestra",
+                    "price": 15000.00,
+                    "currency": "RUB",
+                    "benefits": [
+                        "Premium Seating",
+                        "Programme",
+                        "Champagne Reception"
+                    ],
+                    "available": 100
+                },
+                {
+                    "type": "Orchestra",
+                    "price": 8000.00,
+                    "currency": "RUB",
+                    "benefits": [
+                        "Orchestra Seating",
+                        "Programme"
+                    ],
+                    "available": 1000
+                },
+                {
+                    "type": "Balcony",
+                    "price": 3000.00,
+                    "currency": "RUB",
+                    "benefits": [
+                        "Balcony Seating"
+                    ],
+                    "available": 1000
+                }
+            ],
+            "status": "Almost Sold Out",
+            "tags": [
+                "ballet",
+                "classical",
+                "dance",
+                "culture"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+.event-card{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    background-color: #fff;
+    border: 1px solid var(--white);
+    transition: 0.2s all ease-in-out;
+    cursor: pointer;
+}
+
+.event-card:hover{
+    border: 1px solid var(--text-disabled);
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.time{
+    font-size: var(--font-basic);
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+.name{
+    font-size: var(--font-md);
+    color: var(--black);
+    font-weight: var(--font-weight-title);
+}
+
+
+
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.organizers{
+    color: var(--text-disabled);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.location{
+    color: var(--text-disabled);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.location .material-symbols-outlined{
+    font-size: 17px;
+}
+
+.event-status{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.price{
+    font-size: var(--font-xs);
+    height: 25px;
+    background-color: #E3F4E1;
+    color: #3CBD2C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 7px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+

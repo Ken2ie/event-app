@@ -1,0 +1,96 @@
+<div class="payment">
+  <div class="container">
+    <div class="product-deliverables-and-pmethod">
+      <div class="delivery block">
+        <div class="header">
+          <h2>Delivery</h2>
+          <span class="check material-symbols-outlined">check_circle</span>
+        </div>
+        <span>Mobile Phone</span>
+        <p>The tickets will will be sent to you via mobile phone.</p>
+      </div>
+      <div class="payment-method block">
+        <div class="header">
+          <h2>Payment</h2>
+          <span class="check material-symbols-outlined">check_circle</span>
+        </div>
+        <div class="saved-cards">
+          <fieldset>
+            @for (card of cards; track $index) {
+            <div
+              class="card"
+              [class.selected]="selectedCard?.id === card.id"
+              (click)="selectCard(card)"
+            >
+              <span class="material-symbols-outlined">credit_card</span>
+              <div class="card-info">
+                <span class="card-number">{{ card.cardNumber }}</span>
+                <span class="expiry">Expires: {{ card.expirationDate }}</span>
+              </div>
+              @if (selectedCard?.id === card.id) {
+              <span class="material-symbols-outlined check-icon"
+                >check_circle</span
+              >
+              }
+            </div>
+            }
+          </fieldset>
+          @if (selectedCard) {
+          <div class="security-code-section">
+            <label for="securityCode">Security Code</label>
+            <div class="security-input">
+              <input
+                type="password"
+                id="securityCode"
+                [(ngModel)]="securityCode"
+                maxlength="4"
+                placeholder="CVV"
+              />
+              <span class="material-symbols-outlined cvv-icon">lock</span>
+            </div>
+            <small>3-4 digits on the back of your card</small>
+          </div>
+          }
+          <div>
+            <button class="add-card-button" (click)="openDialog()">
+              <span class="add material-symbols-outlined">add</span>
+              <span class="material-symbols-outlined">credit_card</span>
+              <span>Add Card</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="total block">
+      <div class="header">
+        <h2>Total</h2>
+        <span class="price">{{
+          selectedTicket.ticketType * selectedTicket.quantity
+            | currency : event.ticketTiers[0].currency
+        }}</span>
+      </div>
+      <div class="tickets">
+        <h3>{{ event.title }}</h3>
+        <span
+          >{{ selectedTicket.quantity }} x {{ selectedTicket.ticketType }}</span
+        >
+        <span>{{
+          selectedTicket.quantity * selectedTicket.ticketType
+            | currency : event.ticketTiers[0].currency
+        }}</span>
+         <div class="summary-row">
+            <span>Ticket Type:</span>
+            <span>{{event.ticketTiers[0].type}}</span>
+          </div>
+      </div>
+      <button>Cancel Order</button>
+      <button
+        class="pay-button"
+        [disabled]="!isPaymentValid()"
+        (click)="processPayment()"
+      >
+        Pay Now
+      </button>
+    </div>
+  </div>
+</div>

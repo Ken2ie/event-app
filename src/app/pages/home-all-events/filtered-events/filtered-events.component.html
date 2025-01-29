@@ -1,0 +1,113 @@
+<div class="events">
+  <div class="container">
+    <div class="head-panel">
+      <h1>Events</h1>
+      <button class="material-symbols-outlined">search</button>
+    </div>
+    <div class="all-filtered-events">
+      <!-- <p-timeline [value]="events">
+                <ng-template #content let-event>
+                    {{ event.status }}
+                </ng-template>
+            </p-timeline> -->
+
+      @for (item of events; track $index) {
+      <app-event-card (click)="openEventSideDialog(item)" [event]="item" />
+      }
+    </div>
+  </div>
+</div>
+
+<p-dialog
+  [modal]="true"
+  [(visible)]="visible"
+  position="right"
+  [style]="{ width: '40vw', height: '90vh', marginInlineEnd: '20px' }"
+>
+  <div class="selectedEventDialog">
+    <div class="event-container">
+      <div class="header-details">
+        <h1>{{ selectedEvent?.title }}</h1>
+        <span class="organizers">
+          <span class="circle">
+            {{ selectedEvent?.organizer?.initials }}
+          </span>
+          <span
+            >By {{ selectedEvent?.organizer?.displayName }}, Company:
+            {{ selectedEvent?.organizer?.company }}</span
+          >
+        </span>
+      </div>
+      <div class="time-details">
+        <div class="date">
+          <div class="date-day block">
+            <span>{{ selectedEvent?.date | date : "MMM" }}</span>
+            <span>{{ selectedEvent?.date | date : "d" }}</span>
+          </div>
+          <div class="date-d">
+            <span
+              >{{ selectedEvent?.date | date : "EEEE" }},
+              {{ selectedEvent?.date | date : "MMMM d" }}</span
+            >
+            <span>{{ selectedEvent?.date | date : "h:mm a" }}</span>
+          </div>
+        </div>
+        <div class="location">
+          <span class="location-pin block material-symbols-outlined"
+            >location_on</span
+          >
+          <div class="location-address">
+            <span>{{ selectedEvent?.venue?.address }}</span>
+            <span>{{ selectedEvent?.venue?.city }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="get-ticket">
+        <span class="header-ticket">
+          <legend>Select Ticket Type</legend>
+        </span>
+        <div class="ticket-types">
+          @for (ticket of selectedEvent?.ticketTiers; track $index) {
+          <fieldset>
+            <div>
+              <input
+                type="radio"
+                [id]="'ticket-' + ticket.benefits"
+                name="ticketType"
+                [value]="ticket"
+                [(ngModel)]="selectedTicket"
+              />
+              <label [for]="'ticket-' + ticket.benefits"
+                >{{ ticket.type }} -
+                {{ ticket.price | currency : ticket.currency }}</label
+              >
+            </div>
+          </fieldset>
+          }
+        </div>
+        <div class="quantity-section">
+          <input
+            type="number"
+            placeholder="Quantity"
+            [(ngModel)]="quantity"
+            (ngModelChange)="onQuantityChange()"
+            [disabled]="!selectedTicket"
+            min="1"
+            max="10"
+          />
+        </div>
+        <button
+          (click)="makePayment()"
+          [disabled]="!selectedTicket || quantity < 1"
+        >
+          Buy ticket @if (selectedTicket?.price !== null && quantityTimesPrice >
+          0) {
+          {{
+            quantityTimesPrice | currency : selectedTicket?.currency ?? "USD"
+          }}
+          }
+        </button>
+      </div>
+    </div>
+  </div>
+</p-dialog>

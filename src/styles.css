@@ -73,7 +73,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Liter", sans-serif;
+  font-family: "Liter", sans-serif ;
 }
 
 body {
@@ -95,3 +95,27 @@ body {
     max-inline-size: 53rem;
     padding: 0 20px;
 }
+
+.organizers{
+  color: var(--text-disabled);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.circle{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: var(--black);
+  font-size: 10px;
+  font-weight: 600    ;
+  color: var(--white);
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

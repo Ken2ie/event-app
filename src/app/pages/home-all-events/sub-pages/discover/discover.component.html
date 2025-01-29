@@ -8,8 +8,17 @@
       </p>
     </div>
     <div class="categories">
-        <div class="by-type"></div>
-        <div class="by-country"></div>
+        <div class="by-type">
+            <span class="title">Browse by Category</span>
+           <div class="all-types">
+            @for (type of AllTypes; track $index) {
+                <app-category-cards [routerLink]="['/filtered-events']" [queryParams]="{type: type.type}" [allTypes]="type"/>
+            }
+           </div>
+        </div>
+        <div class="by-country">
+            <span class="title">Browse by Country</span>
+        </div>
     </div>
   </div>
 </div>

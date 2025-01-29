@@ -1,0 +1,25 @@
+.discover{
+    margin-block-start: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.by-type .all-types{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-gap: 20px;
+}
