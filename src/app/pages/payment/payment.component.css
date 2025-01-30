@@ -154,3 +154,9 @@ fieldset{
     transform: translateY(-50%);
     color: #666;
   }
+
+  @media screen and (max-width: 900px) {
+      .container{
+        flex-direction: column;
+      }
+  }

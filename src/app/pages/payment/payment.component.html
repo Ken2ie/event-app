@@ -83,7 +83,7 @@
             <span>{{event.ticketTiers[0].type}}</span>
           </div>
       </div>
-      <button>Cancel Order</button>
+      <button (click)="cancelOrder()">Cancel Order</button>
       <button
         class="pay-button"
         [disabled]="!securityCode"

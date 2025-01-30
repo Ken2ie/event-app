@@ -117,5 +117,11 @@ body {
 }
 
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+button{
+  height: 40px;
+  background-color: #000000;
+  color: #fff;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+}

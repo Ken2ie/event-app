@@ -106,4 +106,8 @@ export class PaymentComponent implements OnInit{
     this.securityCode = ''; 
   }
 
+  cancelOrder(){
+    this.router.navigate([''])
+  }
+
 }

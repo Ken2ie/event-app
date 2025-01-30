@@ -19,8 +19,32 @@
     gap: 20px;
 }
 
+.by-type{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.by-type .title{
+    font-size: 18px;
+    font-weight: 500;
+}
+
 .by-type .all-types{
     display: grid;
     grid-template-columns: repeat(3, 3fr);
     grid-gap: 20px;
+}
+
+
+@media screen and (max-width : 900px) {
+    .all-types {
+        grid-template-columns: repeat(2, 2fr) !important;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .all-types {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
 }
