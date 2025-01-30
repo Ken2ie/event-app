@@ -2,14 +2,8 @@
   <div class="container">
     <div class="head-panel">
       <h1>Events</h1>
-      <!-- <button class="material-symbols-outlined">search</button> -->
     </div>
     <div class="all-filtered-events">
-      <!-- <p-timeline [value]="events">
-                <ng-template #content let-event>
-                    {{ event.status }}
-                </ng-template>
-            </p-timeline> -->
 
       @for (item of events; track $index) {
       <app-event-card (click)="openEventSideDialog(item)" [event]="item" />
@@ -22,7 +16,8 @@
   [modal]="true"
   [(visible)]="visible"
   position="right"
-  [style]="{ width: '40vw', height: '90vh', marginInlineEnd: '20px' }"
+  styleClass="responsive-dialog"
+  [contentStyle]="{ 'overflow': 'auto' }"
 >
   <div class="selectedEventDialog">
     <div class="event-container">

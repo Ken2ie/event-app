@@ -141,3 +141,52 @@ fieldset div{
     align-items: center;
     gap: 10px;
 }
+
+
+
+/* Custom responsive dialog styles */
+::ng-deep .responsive-dialog.p-dialog {
+    width: 40vw;
+    height: 90vh;
+    margin-inline-end: 20px;
+    
+    /* Responsive adjustments */
+}
+@media (max-width: 1024px) {
+    ::ng-deep .responsive-dialog.p-dialog {
+
+  width: 60vw;
+}
+}
+
+@media (max-width: 768px) {
+    ::ng-deep .responsive-dialog.p-dialog {
+
+  width: 80vw;
+  margin-inline-end: 10px;
+  position: fixed !important;
+    }
+}
+
+@media (max-width: 480px) {
+    ::ng-deep .responsive-dialog.p-dialog {
+
+  width: 95vw;
+  height: 95vh;
+  margin-inline-end: 0;
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+    }
+}
+  
+  /* Mobile-specific positioning override */
+  @media (max-width: 480px) {
+    ::ng-deep .responsive-dialog.p-dialog {
+      .p-dialog-header,
+      .p-dialog-content {
+        padding: 1rem;
+      }
+    }
+  }
