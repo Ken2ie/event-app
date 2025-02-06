@@ -1,162 +1,185 @@
-.payment{
-    width: 100%;
-    height: 100%;
-    margin-block-start: 40px;
+.payment {
+  width: 100%;
+  height: 100%;
+  margin-block-start: 40px;
 }
 
-.container{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    gap: 20px;
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 20px;
 }
 
-.product-deliverables-and-pmethod{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.product-deliverables-and-pmethod {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.product-deliverables-and-pmethod, .total{
-    flex: 1;
+.product-deliverables-and-pmethod,
+.total {
+  flex: 1;
 }
 
-.block{
-    padding: 20px;
-    border: 1px solid var(--text-disabled);
-    border-radius: 20px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.block {
+  padding: 20px;
+  border: 1px solid var(--text-disabled);
+  border-radius: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 20px;
 }
 
-.header{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.total{
+  height: 40vh;
 }
 
-.header h2{
-    margin: 0;
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.add-card-button{
-    width: 100%;
-    display: flex;
+.header h2 {
+  margin: 0;
 }
 
-.add-card-button button{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-    height: 40px;
-    padding: 0 20px;
-    background-color: #fff;
-    border: 0;
-    outline: 0;
+.add-card-button {
+  width: 100%;
+  display: flex;
 }
 
-.check{
-    color: green;
+.add-card-button button {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+  background-color: #fff;
+  border: 0;
+  outline: 0;
+}
+
+.check {
+  color: green;
 }
 
 .cards-container {
-    margin: 20px 0;
-  }
-  
-  .card {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .card:hover {
-    background-color: #f8f9fa;
-  }
+  margin: 20px 0;
+}
 
-fieldset{
-    border: 0;
+.card {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background-color: #f8f9fa;
+}
+
+fieldset {
+  border: 0;
 }
 
 .card.selected {
-    border-color: #2e7d32;
-    background-color: #f1f8f1;
-  }
-  
-  .card-info {
-    margin-left: 15px;
-    flex-grow: 1;
-  }
-  
-  .card-number {
-    font-size: 16px;
-    font-weight: 500;
-  }
-  
-  .expiry {
-    display: block;
-    font-size: 14px;
-    color: #666;
-    margin-top: 4px;
-  }
-  
-  .check-icon {
-    color: #2e7d32;
-  }
-  
-  .add-card-button {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: none;
-    border: 2px dashed #ddd;
-    padding: 15px;
-    width: 100%;
-    border-radius: 8px;
-    cursor: pointer;
-    color: #666;
-    margin-top: 15px;
-  }
-  
-  .add-card-button:hover {
-    background-color: #f8f9fa;
-    border-color: #ccc;
-  }
-  
-  .security-code-section {
-    margin-top: 20px;
-  }
-  
-  .security-input {
-    position: relative;
-    max-width: 120px;
-  }
-  
-  .security-input input {
-    width: 100%;
-    padding: 8px;
-    padding-right: 35px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  
-  .cvv-icon {
-    position: absolute;
-    right: 8px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #666;
-  }
+  border-color: #2e7d32;
+  background-color: #f1f8f1;
+}
 
-  @media screen and (max-width: 900px) {
-      .container{
-        flex-direction: column;
-      }
+.card-info {
+  margin-left: 15px;
+  flex-grow: 1;
+}
+
+.card-number {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.expiry {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.check-icon {
+  color: #2e7d32;
+}
+
+.add-card-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: 2px dashed #ddd;
+  padding: 15px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #666;
+  margin-top: 15px;
+}
+
+.add-card-button:hover {
+  background-color: #f8f9fa;
+  border-color: #ccc;
+}
+
+.security-code-section {
+  margin-top: 20px;
+}
+
+.security-input {
+  position: relative;
+  max-width: 120px;
+}
+
+.security-input input {
+  width: 100%;
+  padding: 8px;
+  padding-right: 35px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.action {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.action button {
+  padding: 0 20px;
+  width: 100%;
+}
+
+.action button:first-child {
+  background-color: red;
+}
+
+.cvv-icon {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
   }
+}

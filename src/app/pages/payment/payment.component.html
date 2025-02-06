@@ -72,17 +72,18 @@
       <div class="tickets">
         <h3>{{ event.title }}</h3>
         <span
-          >{{ selectedTicket.quantity }} x {{ selectedTicket.ticketType }}</span
-        >
+          >Quantity Total : {{ selectedTicket.quantity }} x {{ selectedTicket.ticketType }}</span
+        > = 
         <span>{{
           selectedTicket.quantity * selectedTicket.ticketType
             | currency : event.ticketTiers[0].currency
         }}</span>
          <div class="summary-row">
-            <span>Ticket Type:</span>
+            <span>Ticket Type: </span>
             <span>{{event.ticketTiers[0].type}}</span>
           </div>
       </div>
+     <div class="action">
       <button (click)="cancelOrder()">Cancel Order</button>
       <button
         class="pay-button"
@@ -91,6 +92,7 @@
       >
         Pay Now
       </button>
+     </div>
     </div>
   </div>
 </div>

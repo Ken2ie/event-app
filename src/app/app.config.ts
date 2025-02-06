@@ -9,5 +9,5 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
     { provide: LocationStrategy, useClass: HashLocationStrategy }, 
-    provideAnimationsAsync(), provideAnimationsAsync()]
+    provideAnimationsAsync(), provideAnimationsAsync(), provideAnimationsAsync()]
 };
