@@ -76,7 +76,7 @@
         > = 
         <span>{{
           selectedTicket.quantity * selectedTicket.ticketType
-            | currency : event.ticketTiers[0].currency
+            | currency : 'USD'
         }}</span>
          <div class="summary-row">
             <span>Ticket Type: </span>
@@ -87,7 +87,6 @@
       <button (click)="cancelOrder()">Cancel Order</button>
       <button
         class="pay-button"
-        [disabled]="!securityCode"
         (click)="processPayment()"
       >
         Pay Now

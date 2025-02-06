@@ -164,6 +164,7 @@ fieldset {
 .action button {
   padding: 0 20px;
   width: 100%;
+  cursor: pointer;
 }
 
 .action button:first-child {

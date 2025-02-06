@@ -9,6 +9,13 @@ import { CardFormComponent } from './add-card.component';
 import { CreditCardService } from '../../services/credit-card/credit-card.service';
 import { PaymentService } from '../../services/payment/payment.service';
 import { FormsModule } from '@angular/forms';
+import {
+  MatSnackBar,
+  MatSnackBarAction,
+  MatSnackBarActions,
+  MatSnackBarLabel,
+  MatSnackBarRef,
+} from '@angular/material/snack-bar';
 @Component({
   selector: 'app-payment',
   standalone: true,
@@ -43,6 +50,16 @@ export class PaymentComponent implements OnInit{
     }
   }
 
+  private _snackBar = inject(MatSnackBar);
+
+  durationInSeconds = 5;
+
+  openSnackBar() {
+    this._snackBar.openFromComponent(PaymentSuccessullComponent, {
+      duration: this.durationInSeconds * 1000,
+    });
+  }
+
   getPaymentData(){
     this.route.queryParams.subscribe({
       next: (params : any) => {        
@@ -68,9 +85,13 @@ export class PaymentComponent implements OnInit{
     this.cards = this.creditCardService.getAllCards()
   }
 
+  alert(message: string, action: string) {
+    this._snackBar.open(message, action);
+  }
+
   processPayment() {
-    if (!this.selectedCard || !this.securityCode || !this.event) {
-       alert("Please enter the CVV for your card!")
+    if (!this.securityCode) {
+       this.alert("Please enter you CVV code", "Ok")
        return;
     }
 
@@ -84,6 +105,9 @@ export class PaymentComponent implements OnInit{
 
     try{
       this.paymentService.addToEvents(payment);
+      this._snackBar.openFromComponent(PaymentSuccessullComponent, {
+        duration: this.durationInSeconds * 1000,
+      });
       this.router.navigate([''])
     } catch (error) {
       alert(error)
@@ -110,4 +134,26 @@ export class PaymentComponent implements OnInit{
     this.router.navigate([''])
   }
 
+}
+
+
+@Component({
+  selector: 'snack-bar-annotated-component-example-snack',
+  template: `
+   <span>Payment Successfull</span>
+  `,
+  standalone: true,
+  styles: `
+    :host {
+      display: flex;
+    }
+
+    .example-pizza-party {
+      color: hotpink;
+    }
+  `,
+  imports: [ MatSnackBarLabel, MatSnackBarActions, MatSnackBarAction],
+})
+export class PaymentSuccessullComponent {
+  snackBarRef = inject(MatSnackBarRef);
 }
